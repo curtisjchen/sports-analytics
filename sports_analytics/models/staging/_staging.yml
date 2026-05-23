@@ -1,0 +1,21 @@
+version: 2
+
+models:
+  - name: stg_games
+    tests:
+      - dbt_utils.unique_combination_of_columns:  # model-level test
+          combination_of_columns:
+            - game_id
+            - team_id
+    columns:
+      - name: game_id  # column-level tests
+        tests:
+          - not_null
+      - name: team_id
+        tests:
+          - not_null
+      - name: wl
+        tests:
+          - accepted_values:
+              arguments:
+                values: ['W', 'L']
