@@ -1,0 +1,32 @@
+{{ config(materialized='view') }}
+select
+    season_id,
+    team_id,
+    team_abbreviation,
+    team_name,
+    game_id,
+    game_date,
+    matchup,
+    wl,
+    min,
+    pts,
+    fgm,
+    fga,
+    fg_pct,
+    fg3m,
+    fg3a,
+    fg3_pct,
+    ftm,
+    fta,
+    ft_pct,
+    oreb,
+    dreb,
+    reb,
+    ast,
+    stl,
+    blk,
+    tov,
+    pf,
+    plus_minus
+from {{ source('sports', 'games') }}
+where season_id like '2%'

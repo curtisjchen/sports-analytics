@@ -1,0 +1,8 @@
+version: 2
+
+sources:
+  - name: sports
+    database: sports
+    schema: public
+    tables:
+      - name: games

@@ -1,0 +1,47 @@
+[0m19:54:10.168875 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7dc6c4551ac0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7dc6c2612480>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7dc6c189de20>]}
+
+
+============================== 19:54:10.235784 | a724a2ac-3bd7-4ff8-9210-0324a05c42fd ==============================
+[0m19:54:10.235784 [info ] [MainThread]: Running with dbt=1.11.10
+[0m19:54:10.236472 [debug] [MainThread]: running dbt with arguments {'partial_parse': 'True', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'empty': 'None', 'invocation_command': 'dbt init dbt', 'static_parser': 'True', 'use_experimental_parser': 'False', 'fail_fast': 'False', 'indirect_selection': 'eager', 'version_check': 'True', 'log_path': 'logs', 'debug': 'False', 'introspect': 'True', 'use_colors': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'printer_width': '80', 'write_json': 'True', 'send_anonymous_usage_stats': 'True', 'log_format': 'default', 'no_print': 'None', 'quiet': 'False', 'log_cache_events': 'False', 'profiles_dir': '/home/curtis/.dbt'}
+[0m19:54:10.761303 [info ] [MainThread]: Creating dbt configuration folder at /home/curtis/.dbt
+[0m19:54:27.689318 [debug] [MainThread]: Starter project path: /mnt/c/Users/minds/sports-analytics/.venv/lib/python3.12/site-packages/dbt/include/starter_project
+[0m19:54:27.987136 [info ] [MainThread]: 
+Your new dbt project "sports_analytics" was created!
+
+For more information on how to configure the profiles.yml file,
+please consult the dbt documentation here:
+
+  https://docs.getdbt.com/docs/configure-your-profile
+
+One more thing:
+
+Need help? Don't hesitate to reach out to us via GitHub issues or on Slack:
+
+  https://community.getdbt.com/
+
+Happy modeling!
+
+[0m19:54:27.987772 [info ] [MainThread]: Setting up your profile.
+[0m19:55:13.638406 [info ] [MainThread]: Profile sports_analytics written to /home/curtis/.dbt/profiles.yml using target's profile_template.yml and your supplied values. Run 'dbt debug' to validate the connection.
+[0m19:55:13.643103 [debug] [MainThread]: Resource report: {"command_name": "init", "command_success": true, "command_wall_clock_time": 63.533913, "process_in_blocks": "19504", "process_kernel_time": 1.352638, "process_mem_max_rss": "124028", "process_out_blocks": "8", "process_user_time": 1.655664}
+[0m19:55:13.643931 [debug] [MainThread]: Command `dbt init` succeeded at 19:55:13.643793 after 63.53 seconds
+[0m19:55:13.644557 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7dc6c20ebb00>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7dc6c23279b0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7dc6c3b96cf0>]}
+[0m19:55:13.645210 [debug] [MainThread]: Flushing usage events
+[0m19:55:14.006573 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m20:59:19.015873 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7b23ba175be0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7b23b7fd2f60>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7b23b786a0c0>]}
+
+
+============================== 20:59:19.034419 | 2cc091e1-f214-463a-bafd-c79ceee1decc ==============================
+[0m20:59:19.034419 [info ] [MainThread]: Running with dbt=1.11.10
+[0m20:59:19.035025 [debug] [MainThread]: running dbt with arguments {'use_experimental_parser': 'False', 'warn_error': 'None', 'indirect_selection': 'eager', 'write_json': 'True', 'introspect': 'True', 'send_anonymous_usage_stats': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'profiles_dir': '/home/curtis/.dbt', 'quiet': 'False', 'static_parser': 'True', 'debug': 'False', 'printer_width': '80', 'no_print': 'None', 'target_path': 'None', 'log_cache_events': 'False', 'log_path': 'logs', 'fail_fast': 'False', 'use_colors': 'True', 'log_format': 'default', 'invocation_command': 'dbt run', 'empty': 'False', 'partial_parse': 'True', 'version_check': 'True', 'cache_selected_only': 'False'}
+[0m20:59:19.035781 [error] [MainThread]: Encountered an error:
+Runtime Error
+  No dbt_project.yml found at expected path /mnt/c/Users/minds/sports-analytics/dbt_project.yml
+  Verify that each entry within packages.yml (and their transitive dependencies) contains a file named dbt_project.yml
+  
+[0m20:59:19.038239 [debug] [MainThread]: Resource report: {"command_name": "run", "command_success": false, "command_wall_clock_time": 0.08557776, "process_in_blocks": "40600", "process_kernel_time": 1.249949, "process_mem_max_rss": "104840", "process_out_blocks": "0", "process_user_time": 1.361331}
+[0m20:59:19.038894 [debug] [MainThread]: Command `dbt run` failed at 20:59:19.038715 after 0.09 seconds
+[0m20:59:19.039348 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7b23b7c09bb0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7b23b74e3a40>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7b23b7c6bc20>]}
+[0m20:59:19.039792 [debug] [MainThread]: Flushing usage events
+[0m20:59:19.492396 [debug] [MainThread]: An error was encountered while trying to flush usage events
